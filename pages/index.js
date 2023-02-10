@@ -1,14 +1,13 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import ThingsToDo from '@/sections/ThingsToDo'
-import Navbar from '@/components/Navbar'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import ThingsToDo from "@/sections/ThingsToDo";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <>
-    <>
-      <Navbar/>
+      <Navbar />
 
       <div className="h-screen flex flex-col justify-center items-center bg-cover bg-fixed bg-[url('../public/images/top-background.webp')]">
         <h1 className="text-center text-white ">Welcome to Aidni</h1>
@@ -73,10 +72,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-<ThingsToDo/>
-      
+      <ThingsToDo />
     </>
-      
-    </>
-  )
+  );
 }
