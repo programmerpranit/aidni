@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -10,16 +11,32 @@ const Navbar = () => {
           <div className="logo">
             <h3>Aidani</h3>
           </div>
-          <div className={`links flex  ${toggle ? "flex-col w-2/3 right-0 text-center fixed top-16 bg-slate-100" : "max-md:hidden"}`}>
-            <p className="md:mx-5 my-1">Grace Villa</p>
-            <p className="md:mx-5 my-1">Greek Glory</p>
+          <div
+            className={`links flex  ${
+              toggle
+                ? "flex-col w-2/3  right-0 text-center animate-fade fixed top-16 bg-white"
+                : "max-md:hidden"
+            }`}
+          >
+            <Link href={"/grace-villa"}>
+              <p className="md:mx-5 my-1 cursor-pointer hover:text-blue-500">
+                Grace Villa
+              </p>
+            </Link>
+            <Link href={"/greek-glory"}>
+              <p className="md:mx-5 my-1 cursor-pointer hover:text-blue-500">
+                Greek Glory
+              </p>
+            </Link>
           </div>
-            <div className="hamburger md:hidden mr-5" onClick={()=>setToggle(!toggle)}>
-                <div className="line w-5 mb-1 rounded bg-black h-0.5"></div>
-                <div className="line w-5 mb-1 rounded bg-black h-0.5"></div>
-                <div className="line w-5 mb-1 rounded bg-black h-0.5"></div>
-            </div>
-
+          <div
+            className="hamburger md:hidden mr-5"
+            onClick={() => setToggle(!toggle)}
+          >
+            <div className="line w-5 mb-1 rounded bg-black h-0.5"></div>
+            <div className="line w-5 mb-1 rounded bg-black h-0.5"></div>
+            <div className="line w-5 mb-1 rounded bg-black h-0.5"></div>
+          </div>
         </div>
       </nav>
     </>

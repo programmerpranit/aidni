@@ -38,6 +38,11 @@ h3 {
   color: #383a4e;
   font-weight: 600;
 }
+h4 {
+  font-size: 16px;
+  color: #383a4e;
+  font-weight: 600;
+}
 
 p {
   font-size: 15px;
@@ -53,6 +58,16 @@ button {
   line-height: 50px;
   color: white;
   letter-spacing: 0.1em;
+}
+
+.things-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.thing {
+  width: 30%;
 }
 
 @media screen and (max-width: 480px) {
@@ -72,10 +87,20 @@ button {
     color: #383a4e;
   }
 
+  h4 {
+    font-size: 16px;
+    color: #383a4e;
+    font-weight: 600;
+  }
+
   p {
     font-size: 15px;
     color: #64688c;
     line-height: 1.75;
     letter-spacing: 1px;
+  }
+
+  .thing {
+    width: 90%;
   }
 }

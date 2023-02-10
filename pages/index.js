@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import ThingsToDo from "@/sections/ThingsToDo";
 import Navbar from "@/components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -41,14 +42,16 @@ export default function Home() {
           />
 
           <div className="md:px-10 p-5">
-            <h2>Greek Glory</h2>
+            <h2>Grace Villa</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Voluptate eos eligendi soluta beatae assumenda excepturi sit
               recusandae blanditiis voluptatem cumque? Debitis, atque aut
               suscipit eius architecto assumenda neque totam non?
             </p>
+            <Link href={'/grace-villa'}>
             <button className="bg-blue-500 mt-5">Explore</button>
+            </Link>
           </div>
         </div>
         <div className="flex w-full flex-col md:flex-row-reverse">
@@ -68,7 +71,9 @@ export default function Home() {
               recusandae blanditiis voluptatem cumque? Debitis, atque aut
               suscipit eius architecto assumenda neque totam non?
             </p>
+            <Link href={'/greek-glory'}>
             <button className="bg-blue-500 mt-5">Explore</button>
+            </Link>
           </div>
         </div>
       </div>

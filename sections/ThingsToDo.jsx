@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Thing from "@/components/Thing";
 
 const ThingsToDo = () => {
   return (
@@ -11,27 +12,17 @@ const ThingsToDo = () => {
           nobis officia autem quod a vel rem facere porro possimus cum!
         </p>
 
-        <div className=" flex flex-wrap justify-between">
-          <div className="p-10 bg-red-500">
-            <p>Psp</p>
-          </div>
+        <div className="things-container max-w-5xl m-auto justify-between ">
 
-          {/* <div className="!w-1/3 border m-1 p-3">
-            <Image
-              className=" rounded-lg m-auto "
-              src={"/images/top-background.jpg"}
-              alt={"greek gloary"}
-              width={500}
-              height={500}
-            />
-
-            <div className="p-2 bg-white text-center ">
-              <h3>Venna Lake</h3>
-              <p>Ride A Shikara</p>
-            </div>
-
-          </div> */}
+          <Thing/>
+          <Thing/>
+          <Thing/>
+          <Thing/>
+          <Thing/>
+          <Thing/>
+          
         </div>
+
       </div>
     </>
   );
