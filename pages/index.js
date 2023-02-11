@@ -4,6 +4,11 @@ import { Inter } from "@next/font/google";
 import ThingsToDo from "@/sections/ThingsToDo";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import Facility from "@/components/Facility";
+import { AiOutlineWifi } from "react-icons/ai";
+import { CiParking1 } from "react-icons/ci";
+import { GiCctvCamera } from "react-icons/gi";
+import { MdAir } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -18,15 +23,24 @@ export default function Home() {
       </div>
 
       <div className="">
-        <div className="card rounded-lg w-10/12 mt-[-50px] m-auto bg-blue-50 h-20 p-20"></div>
+        <div className="card rounded-lg flex flex-wrap justify-between w-10/12 mt-[-50px] m-auto bg-blue-50  p-5">
+          <Facility icon={<AiOutlineWifi size={50} />} title={"Free Wifi"} />
+          <Facility icon={<CiParking1 size={50} />} title={"Free Parking"} />
+          <Facility
+            icon={<GiCctvCamera size={50} />}
+            title={"Under Protection"}
+          />
+          <Facility icon={<MdAir size={50} />} title={"Air Conditioned"} />
+        </div>
       </div>
       <div className="about my-20 text-center">
         <h2 className="px-5 text-center">We have 17+ years of Experience</h2>
         <p className="text-center max-w-3xl m-auto my-5 px-4">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-          quibusdam iusto consectetur non porro, illo saepe facere quod suscipit
-          autem ab inventore, quisquam voluptates possimus? Animi officiis
-          veniam nesciunt nihil?
+          Aidni International is an emerging global enterprise brand with
+          diverse businesses, founded as an Indian arm of Air o Sea
+          International a leading import-export company headquartered in Hong
+          Kong. With over 13 years of global business and industry experience
+          under its belt
         </p>
         <button className="bg-blue-500">Explore</button>
       </div>
@@ -44,13 +58,13 @@ export default function Home() {
           <div className="md:px-10 p-5">
             <h2>Grace Villa</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptate eos eligendi soluta beatae assumenda excepturi sit
-              recusandae blanditiis voluptatem cumque? Debitis, atque aut
-              suscipit eius architecto assumenda neque totam non?
+              Nestled in the foothills of Sahyadri, between the enchanting
+              Panchgani-Mahabaleshwar twin hill stations, Greace Villa is one of
+              its kind luxury villas for dream vacations and business too! a
+              complete standout luxury villa cum holiday home for you.
             </p>
-            <Link href={'/grace-villa'}>
-            <button className="bg-blue-500 mt-5">Explore</button>
+            <Link href={"/grace-villa"}>
+              <button className="bg-blue-500 mt-5">Explore</button>
             </Link>
           </div>
         </div>
@@ -66,13 +80,12 @@ export default function Home() {
           <div className="md:px-10 p-5">
             <h2>Greek Glory</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Voluptate eos eligendi soluta beatae assumenda excepturi sit
-              recusandae blanditiis voluptatem cumque? Debitis, atque aut
-              suscipit eius architecto assumenda neque totam non?
+              The property is located on the main road. Park your vehicle and
+              enter downstairs into the valley. The mesmerizing view of the lush
+              green surroundings and fresh air is a one of a kind experience.
             </p>
-            <Link href={'/greek-glory'}>
-            <button className="bg-blue-500 mt-5">Explore</button>
+            <Link href={"/greek-glory"}>
+              <button className="bg-blue-500 mt-5">Explore</button>
             </Link>
           </div>
         </div>

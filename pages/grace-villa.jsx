@@ -1,7 +1,8 @@
+import Facility from "@/components/Facility";
 import Navbar from "@/components/Navbar";
+import Review from "@/components/Review";
 import Image from "next/image";
 import React from "react";
-import { BiSwim } from "react-icons/bi";
 
 const GraceVilla = () => {
   return (
@@ -80,11 +81,6 @@ const GraceVilla = () => {
 
         <div className="card rounded-lg mt-5 m-auto flex justify-center flex-wrap bg-blue-50 md:p-20">
           <Facility />
-          <Facility />
-          <Facility />
-          <Facility />
-          <Facility />
-          <Facility />
         </div>
       </div>
 
@@ -92,8 +88,6 @@ const GraceVilla = () => {
         <h2 className="text-center">Reviews</h2>
 
         <div className="card rounded-lg mt-5 m-auto flex justify-center flex-wrap md:p-10 p-5">
-          <Review />
-          <Review />
           <Review />
         </div>
       </div>
@@ -130,25 +124,3 @@ const GraceVilla = () => {
 };
 
 export default GraceVilla;
-
-const Facility = () => {
-  return (
-    <div className="p-2 flex justify-center flex-col items-center text-center md:m-5 m-2 bg-white md:w-1/5 w-2/5">
-      <BiSwim size={50} color="#383a4e" />
-      <h4 className="py-2">Swiming Pool</h4>
-    </div>
-  );
-};
-
-const Review = () => {
-  return (
-    <div className="p-5 rounded-lg shadow-md flex justify-center border flex-col items-center text-center md:m-5 m-2 mb-5 bg-white md:w-2/5 w-full">
-      <p>
-        Really nice property. Had super fun during the stay with family and
-        friends. The best part is the sandpit for kids. The dinning area is also
-        nice. Enjoyed the bonfire every night. Overall super experience.
-      </p>
-      <h3 className="py-5">Chetan Bhansali</h3>
-    </div>
-  );
-};

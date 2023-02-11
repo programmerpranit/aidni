@@ -3,12 +3,13 @@ import Slider from "@/components/Slider";
 import Image from "next/image";
 import React from "react";
 import { BiSwim } from "react-icons/bi";
-
+import Facility from "@/components/Facility";
+import Review from "@/components/Review";
+import Room from "@/components/Room";
 
 const GreekGlory = () => {
   return (
     <>
-
       <Navbar />
       <div className="h-[60vh] flex justify-center flex-col bg-blue-50 items-center">
         <h1 className="text-center">Greek Glory</h1>
@@ -17,7 +18,7 @@ const GreekGlory = () => {
 
       <div className="md:max-w-6xl m-auto flex max-md:flex-col p-5">
         <Image
-          className="md:w-1/2 md:p-5 "
+          className="md:w-1/2 md:p-5 rounded-3xl "
           src={"/images/top-background.jpg"}
           width={700}
           height={700}
@@ -26,28 +27,28 @@ const GreekGlory = () => {
 
         <div className="md:w-1/2 flex flex-wrap">
           <Image
-            className="w-1/2 md:p-5 max-md:my-2 pr-1"
+            className="w-1/2 md:p-5 max-md:my-2 pr-1 rounded-3xl"
             src={"/images/top-background.jpg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
-            className="w-1/2 md:p-5  max-md:my-2 pl-1"
+            className="w-1/2 md:p-5  max-md:my-2 pl-1 rounded-3xl"
             src={"/images/top-background.jpg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
-            className="w-1/2 md:p-5  max-md:pr-1"
+            className="w-1/2 md:p-5  max-md:pr-1 rounded-3xl"
             src={"/images/top-background.jpg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
-            className="w-1/2 md:p-5  max-md:pl-1"
+            className="w-1/2 md:p-5  max-md:pl-1 rounded-3xl"
             src={"/images/top-background.jpg"}
             width={700}
             height={700}
@@ -143,58 +144,3 @@ const GreekGlory = () => {
 };
 
 export default GreekGlory;
-
-const Facility = () => {
-  return (
-    <div className="p-2 flex justify-center flex-col items-center text-center md:m-5 m-2 bg-white md:w-1/5 w-2/5">
-      <BiSwim size={50} color="#383a4e" />
-      <h4 className="py-2">Swiming Pool</h4>
-    </div>
-  );
-};
-
-const Review = () => {
-  return (
-    <div className="p-5 rounded-lg shadow-md flex justify-center border flex-col items-center text-center md:m-5 m-2 mb-5 bg-white md:w-2/5 w-full">
-      <p>
-        Really nice property. Had super fun during the stay with family and
-        friends. The best part is the sandpit for kids. The dinning area is also
-        nice. Enjoyed the bonfire every night. Overall super experience.
-      </p>
-      <h3 className="py-5">Chetan Bhansali</h3>
-    </div>
-  );
-};
-
-const Room = () => {
-  return (
-    <>
-      <div className="p-5 rounded-lg shadow-md flex max-md:flex-col border md:m-5 m-2 mb-5 w-full">
-        <div className="md:w-1/2">
-          {/* <Slider/> */}
-          <Image
-            className=" md:p-5  max-md:pr-1"
-            src={"/images/top-background.jpg"}
-            width={700}
-            height={700}
-            alt={"grace villa"}
-          />
-        </div>
-
-        <div className="md:w-1/2 p-5">
-          <h3 className="py-5">Barbie pink room</h3>
-
-          <p>
-            Ultimate girly-girl experience, you wont want to miss the Barbie
-            Pink room! The Barbie Pink room is a whimsical, playful, and
-            oh-so-pink escape that is perfect for anyone who loves all things
-            Barbie. From the moment you step inside, you will be transported to
-            a world of pink and glamour, surrounded by playful accents and
-            whimsical details.
-          </p>
-          <button className="bg-blue-500 mt-5">Book Now</button>
-        </div>
-      </div>
-    </>
-  );
-};
