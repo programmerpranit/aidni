@@ -9,8 +9,8 @@ const Navbar = () => {
       <nav className="bg-white w-full fixed rounded-b-lg p-3 z-50">
         <div className="flex md:w-3/4 m-auto justify-between items-center">
           <div className="logo">
-            <Link href={'/'}>
-            <h3>Aidani</h3>
+            <Link href={"/"}>
+              <h3>Aidani</h3>
             </Link>
           </div>
           <div
