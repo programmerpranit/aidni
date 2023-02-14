@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Navbar />
 
-      <div className="h-screen flex flex-col justify-center items-center bg-cover bg-fixed bg-[url('../public/images/top-background.webp')]">
+      <div className="h-screen flex flex-col justify-center items-center bg-cover bg-fixed bg-[url('../public/images/top-background.png')]">
         <h1 className="text-center text-white ">Welcome to Aidni</h1>
         <p className="text-center text-white px-5 max-w-lg">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
@@ -48,7 +48,7 @@ export default function Home() {
       <div className="rooms my-20 max-w-5xl mx-auto p-5">
         <div className="flex w-full max-md:flex-col">
           <Image
-            className="md:w-1/2"
+            className="md:w-1/2 max-md:rounded-lg"
             src={"/images/top-background.jpg"}
             alt={"greek gloary"}
             width={1000}
@@ -57,21 +57,21 @@ export default function Home() {
 
           <div className="md:px-10 p-5">
             <h2>Grace Villa</h2>
-            <p>
+            <p className="my-3">
               Nestled in the foothills of Sahyadri, between the enchanting
               Panchgani-Mahabaleshwar twin hill stations, Greace Villa is one of
               its kind luxury villas for dream vacations and business too! a
               complete standout luxury villa cum holiday home for you.
             </p>
             <Link href={"/grace-villa"}>
-              <button className="bg-blue-500 mt-5">Explore</button>
+              <button className="bg-blue-500 mt-2 hover:bg-blue-600">Explore</button>
             </Link>
           </div>
         </div>
-        <div className="flex w-full flex-col md:flex-row-reverse">
+        <div className="flex w-full flex-col md:flex-row-reverse ">
           <Image
-            className="md:w-1/2"
-            src={"/images/top-background.jpg"}
+            className="md:w-1/2 max-md:rounded-lg"
+            src={"/images/greek-glory.jpg"}
             alt={"greek gloary"}
             width={1000}
             height={1000}
@@ -79,13 +79,13 @@ export default function Home() {
 
           <div className="md:px-10 p-5">
             <h2>Greek Glory</h2>
-            <p>
+            <p className="my-3">
               The property is located on the main road. Park your vehicle and
               enter downstairs into the valley. The mesmerizing view of the lush
               green surroundings and fresh air is a one of a kind experience.
             </p>
             <Link href={"/greek-glory"}>
-              <button className="bg-blue-500 mt-5">Explore</button>
+              <button className="bg-blue-500 mt-2 hover:bg-blue-600">Explore</button>
             </Link>
           </div>
         </div>
