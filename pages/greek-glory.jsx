@@ -16,6 +16,8 @@ import {
   MdOutlineStore,
 } from "react-icons/md";
 
+import {BsInstagram, BsWhatsapp} from 'react-icons/bs';
+
 const GreekGlory = () => {
   return (
     <>
@@ -27,7 +29,7 @@ const GreekGlory = () => {
 
       <div className="md:max-w-6xl m-auto flex max-md:flex-col p-5">
         <Image
-          className="md:w-1/2 md:p-5 rounded-3xl "
+          className="md:w-1/2 md:p-5 md:rounded-3xl rounded-lg"
           src={"/images/greek-glory.jpg"}
           width={700}
           height={700}
@@ -36,28 +38,28 @@ const GreekGlory = () => {
 
         <div className="md:w-1/2 flex flex-wrap">
           <Image
-            className="w-1/2 md:p-5 max-md:my-2 pr-1 rounded-3xl"
+            className="w-1/2 md:p-5 max-md:my-2 pr-1 md:rounded-3xl rounded-lg"
             src={"/images/gg2.jpg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
-            className="w-1/2 md:p-5  max-md:my-2 pl-1 rounded-3xl"
+            className="w-1/2 md:p-5  max-md:my-2 pl-1 md:rounded-3xl rounded-lg"
             src={"/images/gg1.jpg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
-            className="w-1/2 md:p-5  max-md:pr-1 rounded-3xl"
+            className="w-1/2 md:p-5  max-md:pr-1 md:rounded-3xl rounded-lg"
             src={"/images/gg3.jpg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
-            className="w-1/2 md:p-5  max-md:pl-1 rounded-3xl"
+            className="w-1/2 md:p-5  max-md:pl-1 md:rounded-3xl rounded-lg"
             src={"/images/gg4.jpg"}
             width={700}
             height={700}
@@ -70,7 +72,7 @@ const GreekGlory = () => {
         <p className="md:max-w-6xl m-auto p-5 mt-10 text-center">
           The purpose of a thematic resort is to offer our guests a truly unique
           experience, one that is far removed from the everyday world. Whether
-          youre looking for adventure, relaxation, or a touch of whimsy, a
+          you are looking for adventure, relaxation, or a touch of whimsy, a
           AIDNIs Theme resort is the perfect escape from the mundane. Nestled in
           the picturesque hills of Mahabaleshwar, our resort offers a
           one-of-a-kind getaway experience with its unique theme rooms. Each
@@ -101,10 +103,10 @@ const GreekGlory = () => {
           }
         />
         <Room
-          name={"Rainbow theme resort"}
+          name={"Rainbow theme room"}
           image={"/images/rainbow-room.jpg"}
           desc={
-            "we offer a vibrant and cheerful Rainbow Themed Room, perfect for guests seeking a lively and playful ambiance. The room features walls painted in a gradient of rainbow colors, from red to violet, creating a mesmerizing visual effect. The bed is adorned with rainbow-striped linens, adding to the playful vibe."
+            "We offer a vibrant and cheerful Rainbow Themed Room, perfect for guests seeking a lively and playful ambiance. The room in a gradient of rainbow colors, creating a mesmerizing visual effect. The bed is adorned with rainbow-striped linens, adding to the playful vibe."
           }
         />
         <Room
@@ -194,9 +196,9 @@ const GreekGlory = () => {
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15184.385081362681!2d73.7663853!3d17.9276632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc26788129b6071%3A0xfdd6a96e13c2ae68!2sGRACE%20VILLA!5e0!3m2!1sen!2sin!4v1676065568217!5m2!1sen!2sin"
               width="100%"
               height="300"
-              allowfullscreen=""
+              allowFullScreen={true}
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div className="md:w-1/2 p-5 ">
@@ -207,8 +209,24 @@ const GreekGlory = () => {
             </p>
 
             <h3 className="mt-5">Phone Number</h3>
-            <p>7769963473</p>
-            <p>7769963473</p>
+            <a href="tel:+917769963473">
+              <p>77699 63473</p>
+            </a>
+            <a href="tel:+917666084072">
+              <p>76660 84072</p>
+            </a>
+
+            <div className="flex my-5">
+
+              <a href="https://wa.me/917769963473" className="mr-5">
+                <BsWhatsapp size={30}/>
+              </a>
+              <a href="https://instagram.com/aidniinternational?igshid=YmMyMTA2M2Y=">
+                <BsInstagram size={30}/>
+              </a>
+
+            </div>
+
           </div>
         </div>
       </div>

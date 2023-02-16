@@ -1,5 +1,4 @@
 import React from "react";
-import { BiSwim } from "react-icons/bi";
 
 const Facility = ({ icon, title }) => {
   return (

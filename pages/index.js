@@ -59,7 +59,7 @@ export default function Home() {
             <h2>Grace Villa</h2>
             <p className="my-3">
               Nestled in the foothills of Sahyadri, between the enchanting
-              Panchgani-Mahabaleshwar twin hill stations, Greace Villa is one of
+              Panchgani-Mahabaleshwar twin hill stations, Grace Villa is one of
               its kind luxury villas for dream vacations and business too! a
               complete standout luxury villa cum holiday home for you.
             </p>
@@ -82,7 +82,7 @@ export default function Home() {
             <p className="my-3">
               The property is located on the main road. Park your vehicle and
               enter downstairs into the valley. The mesmerizing view of the lush
-              green surroundings and fresh air is a one of a kind experience.
+              green surroundings and fresh air it is a one of a kind experience.
             </p>
             <Link href={"/greek-glory"}>
               <button className="bg-blue-500 mt-2 hover:bg-blue-600">Explore</button>
