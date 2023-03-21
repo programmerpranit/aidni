@@ -148,10 +148,6 @@ const GreekGlory = () => {
             icon={<MdOutlineSportsCricket size={50} />}
             title={"Childrens play area"}
           />
-          <Facility
-            icon={<MdOutlineStore size={50} />}
-            title={"Fantasy store"}
-          />
           <Facility icon={<MdWifi size={50} />} title={"Free Wi-Fi"} />
         </div>
       </div>
@@ -192,8 +188,9 @@ const GreekGlory = () => {
 
         <div className="flex w-full p-5  max-md:flex-col">
           <div className="md:w-1/2 p-5">
+          
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15184.385081362681!2d73.7663853!3d17.9276632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc26788129b6071%3A0xfdd6a96e13c2ae68!2sGRACE%20VILLA!5e0!3m2!1sen!2sin!4v1676065568217!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15183.454877070122!2d73.8264339!3d17.9385092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc269b329b58f63%3A0x18d29d3dfdfa5c27!2sGreek%20Glory!5e0!3m2!1sen!2sin!4v1679431984324!5m2!1sen!2sin"
               width="100%"
               height="300"
               allowFullScreen={true}

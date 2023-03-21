@@ -1,14 +1,14 @@
-import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
 import ThingsToDo from "@/sections/ThingsToDo";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import Facility from "@/components/Facility";
 import { AiOutlineWifi } from "react-icons/ai";
+import { CiLocationOn } from "react-icons/ci";
 import { CiParking1 } from "react-icons/ci";
 import { GiCctvCamera } from "react-icons/gi";
 import { MdAir } from "react-icons/md";
+import { BsWhatsapp, BsInstagram, BsMap } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -24,6 +24,10 @@ export default function Home() {
 
       <div className="">
         <div className="card rounded-lg flex flex-wrap justify-between w-10/12 mt-[-50px] m-auto bg-blue-50  p-5">
+          {/* <Facility icon={<BsWhatsapp size={50} />} title={"WhatsApp"} />
+          <Facility icon={<BsInstagram size={50} />} title={"Instagram"} />
+          <Facility icon={<CiLocationOn size={50} />} title={"Location"} />
+          <Facility icon={<BsMap size={50} />} title={"Property Map"} /> */}
           <Facility icon={<AiOutlineWifi size={50} />} title={"Free Wifi"} />
           <Facility icon={<CiParking1 size={50} />} title={"Free Parking"} />
           <Facility
@@ -42,7 +46,9 @@ export default function Home() {
           Kong. With over 13 years of global business and industry experience
           under its belt
         </p>
-        <button className="bg-blue-500">Explore</button>
+        <a href="#things-to-do">
+          <button className="bg-blue-500">Explore</button>
+        </a>
       </div>
 
       <div className="rooms my-20 max-w-5xl mx-auto p-5">
@@ -50,7 +56,7 @@ export default function Home() {
           <Image
             className="md:w-1/2 max-md:rounded-lg"
             src={"/images/top-background.jpg"}
-            alt={"greek gloary"}
+            alt={"grace villa"}
             width={1000}
             height={1000}
           />
@@ -64,7 +70,9 @@ export default function Home() {
               complete standout luxury villa cum holiday home for you.
             </p>
             <Link href={"/grace-villa"}>
-              <button className="bg-blue-500 mt-2 hover:bg-blue-600">Explore</button>
+              <button className="bg-blue-500 mt-2 hover:bg-blue-600">
+                Explore
+              </button>
             </Link>
           </div>
         </div>
@@ -85,12 +93,65 @@ export default function Home() {
               green surroundings and fresh air it is a one of a kind experience.
             </p>
             <Link href={"/greek-glory"}>
-              <button className="bg-blue-500 mt-2 hover:bg-blue-600">Explore</button>
+              <button className="bg-blue-500 mt-2 hover:bg-blue-600">
+                Explore
+              </button>
             </Link>
           </div>
         </div>
       </div>
+      <div className="" id="things-to-do"></div>
       <ThingsToDo />
+
+
+      <a href="https://wa.me/919356565665" className="fixed bottom-3 right-3">
+
+          <Image src={'/images/whatsapp.png'} width={50} height={50} alt={"whatsapp"} />
+
+      </a>
+
+
+      <div className="md:max-w-6xl m-auto pt-10 bg-blue-50 rounded-lg">
+        <h2 className="text-center mb-5">Contact</h2>
+
+        <div className="flex w-full p-5  max-md:flex-col">
+          <div className="md:w-1/2 p-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15184.385081362681!2d73.7663853!3d17.9276632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc26788129b6071%3A0xfdd6a96e13c2ae68!2sGRACE%20VILLA!5e0!3m2!1sen!2sin!4v1676065568217!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div className="md:w-1/2 p-5 ">
+            <h3 className="mt-5">Location</h3>
+            <p>
+              Pune
+            </p>
+
+            <h3 className="mt-5">Phone Number</h3>
+            <a href="tel:+919356565665">
+              <p>+91 93565 65665</p>
+            </a>
+
+            <div className="flex my-5">
+
+              <a href="https://wa.me/919356565665" className="mr-5">
+                <BsWhatsapp size={30}/>
+              </a>
+              <a href="https://instagram.com/aidniinternational?igshid=YmMyMTA2M2Y=">
+                <BsInstagram size={30}/>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
     </>
   );
 }

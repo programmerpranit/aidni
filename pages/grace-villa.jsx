@@ -3,6 +3,16 @@ import Navbar from "@/components/Navbar";
 import Review from "@/components/Review";
 import Image from "next/image";
 import React from "react";
+import { BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { GiHills } from "react-icons/gi";
+import {
+  MdOutlineBedroomChild,
+  MdOutlineBedroomParent,
+  MdFastfood,
+  MdOutlineSportsCricket,
+  MdWifi,
+  MdOutlineStore,
+} from "react-icons/md";
 
 const GraceVilla = () => {
   return (
@@ -25,28 +35,28 @@ const GraceVilla = () => {
         <div className="md:w-1/2 flex flex-wrap">
           <Image
             className="w-1/2 md:p-5 max-md:my-2 pr-1"
-            src={"/images/top-background.jpg"}
+            src={"/images/grace-villa2.jpeg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
             className="w-1/2 md:p-5  max-md:my-2 pl-1"
-            src={"/images/top-background.jpg"}
+            src={"/images/grace-villa3.jpeg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
             className="w-1/2 md:p-5  max-md:pr-1"
-            src={"/images/top-background.jpg"}
+            src={"/images/grace-villa4.jpeg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
             className="w-1/2 md:p-5  max-md:pl-1"
-            src={"/images/top-background.jpg"}
+            src={"/images/grace-villa5.jpeg"}
             width={700}
             height={700}
             alt={"grace villa"}
@@ -80,7 +90,27 @@ const GraceVilla = () => {
         <h2 className="text-center">Facilities</h2>
 
         <div className="card rounded-lg mt-5 m-auto flex justify-center flex-wrap bg-blue-50 md:p-20">
-          <Facility />
+          <Facility
+            icon={<GiHills size={50} />}
+            title={"Valley view from each room"}
+          />
+          <Facility
+            icon={<MdOutlineBedroomChild size={50} />}
+            title={"Triple occupancy theme based family rooms"}
+          />
+          <Facility
+            icon={<MdOutlineBedroomParent size={50} />}
+            title={"Cozy Couple rooms"}
+          />
+          <Facility
+            icon={<MdFastfood size={50} />}
+            title={"Rooftop cafeteria (Pure Veg)"}
+          />
+          <Facility
+            icon={<MdOutlineSportsCricket size={50} />}
+            title={"Childrens play area"}
+          />
+          <Facility icon={<MdWifi size={50} />} title={"Free Wi-Fi"} />
         </div>
       </div>
 
@@ -88,9 +118,34 @@ const GraceVilla = () => {
         <h2 className="text-center">Reviews</h2>
 
         <div className="card rounded-lg mt-5 m-auto flex justify-center flex-wrap md:p-10 p-5">
-          <Review />
+          <Review
+            owner={"Fatima Kazi"}
+            review={
+              "Great location, really pleasant and clean rooms.. Each and every room has its own unique theme which is eye appealing.. Greek Glory would be a perfect stay for kids too as they have activities and an outdoor play area for kids. The thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous. We had a good time at Greek Glory Highly recommended"
+            }
+          />
+          <Review
+            owner={"Shivam Raj"}
+            review={
+              "Awesome place to stay with all the amenities you need & definitely not to miss out the food .. quality & taste is awesome. I stayed for 4 days with family and guys this resort has everything your need for yourself to relax. They have amazing play area / view'/ cafe/ spacious rooms , you will just love it. Staff were very welcoming . In totality you will love this place in every way."
+            }
+          />
+          <Review
+            owner={"Yashraj Sisode"}
+            review={
+              "Our stay at Greek Glory Belong Mahabaleshwar Was magical beyond all expectations. The ambiences were impeccable and simply beautiful. The Staff were friendly and amazing accommodating. The food! Oh my god, the food was totally delicious. We could not have wanted for single thing. If we come back to Mahabaleshwar we would not consider staying anywhere other than here. Absolutely perfect! Thank You so much Team"
+            }
+          />
+          <Review
+            owner={"Shriranga Bhat"}
+            review={
+              "Nice, Small .. Themes based hotel bang on the highway! Staff is super friendly and Manager Omkar is quick with his response and arrangement. Rooms are clean and theme based. Food options are few, however they arrange all your food / deit requests. The view of Sahyadri mountain is wonderful from the restaurant and few rooms"
+            }
+          />
         </div>
       </div>
+
+
 
       <div className="md:max-w-6xl m-auto pt-10 bg-blue-50 rounded-lg">
         <h2 className="text-center mb-5">Contact</h2>
@@ -101,21 +156,28 @@ const GraceVilla = () => {
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15184.385081362681!2d73.7663853!3d17.9276632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc26788129b6071%3A0xfdd6a96e13c2ae68!2sGRACE%20VILLA!5e0!3m2!1sen!2sin!4v1676065568217!5m2!1sen!2sin"
               width="100%"
               height="300"
-              allowfullscreen=""
+              allowFullScreen={true}
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div className="md:w-1/2 p-5 ">
             <h3 className="mt-5">Location</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reprehenderit, dolorem.
-            </p>
+            <p>Pune</p>
 
             <h3 className="mt-5">Phone Number</h3>
-            <p>7769963473</p>
-            <p>7769963473</p>
+            <a href="tel:+919356565665">
+              <p>+91 93565 65665</p>
+            </a>
+
+            <div className="flex my-5">
+              <a href="https://wa.me/919356565665" className="mr-5">
+                <BsWhatsapp size={30} />
+              </a>
+              <a href="https://instagram.com/aidniinternational?igshid=YmMyMTA2M2Y=">
+                <BsInstagram size={30} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
