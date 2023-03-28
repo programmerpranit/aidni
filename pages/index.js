@@ -2,12 +2,13 @@ import Image from "next/image";
 import ThingsToDo from "@/sections/ThingsToDo";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import Facility from "@/components/Facility";
 import { AiOutlineWifi } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 import { CiParking1 } from "react-icons/ci";
 import { GiCctvCamera } from "react-icons/gi";
-import { MdAir } from "react-icons/md";
+import { BsFillHouseDoorFill } from "react-icons/bs";
+import {BiPhoneCall} from 'react-icons/bi';
+import { MdAir, MdVilla } from "react-icons/md";
 import { BsWhatsapp, BsInstagram, BsMap } from "react-icons/bs";
 
 export default function Home() {
@@ -18,23 +19,24 @@ export default function Home() {
       <div className="h-screen flex flex-col justify-center items-center bg-cover bg-fixed bg-[url('../public/images/top-background.png')]">
         <h1 className="text-center text-white ">Welcome to Aidni</h1>
         <p className="text-center text-white px-5 max-w-lg">
-        An emerging global enterprise brand with diverse businesses.
+          An emerging global enterprise brand with diverse businesses.
         </p>
       </div>
 
       <div className="">
         <div className="card rounded-lg flex flex-wrap justify-between w-10/12 mt-[-50px] m-auto bg-blue-50  p-5">
-          {/* <Facility icon={<BsWhatsapp size={50} />} title={"WhatsApp"} />
-          <Facility icon={<BsInstagram size={50} />} title={"Instagram"} />
-          <Facility icon={<CiLocationOn size={50} />} title={"Location"} />
-          <Facility icon={<BsMap size={50} />} title={"Property Map"} /> */}
-          <Facility icon={<AiOutlineWifi size={50} />} title={"Free Wifi"} />
-          <Facility icon={<CiParking1 size={50} />} title={"Free Parking"} />
+          <Facility icon={<BsWhatsapp size={50} />} title={"WhatsApp"} link={'https://wa.me/919356565665'} />
+          <Facility icon={<BiPhoneCall size={50} />} title={"Instagram"} link={'tel:919356565665'} />
+          {/* <Facility icon={<CiLocationOn size={50} />} title={"Location"} /> */}
+          {/* <Facility icon={<BsMap size={50} />} title={"Property Map"} /> */}
+          {/* <Facility icon={<AiOutlineWifi size={50} />} title={"Free Wifi"} /> */}
+          {/* <Facility icon={<CiParking1 size={50} />} title={"Free Parking"} /> */}
           <Facility
-            icon={<GiCctvCamera size={50} />}
-            title={"Under Protection"}
+            icon={<BsFillHouseDoorFill size={50} />}
+            title={"Greek Glory"}
+            link={'/greek-glory'}
           />
-          <Facility icon={<MdAir size={50} />} title={"Air Conditioned"} />
+          <Facility icon={<MdVilla size={50} />} title={"Grace Villa"} link={'/grace-villa'} />
         </div>
       </div>
       <div className="about my-20 text-center">
@@ -55,7 +57,7 @@ export default function Home() {
         <div className="flex w-full max-md:flex-col">
           <Image
             className="md:w-1/2 max-md:rounded-lg"
-            src={"/images/top-background.jpg"}
+            src={"/images/grace-villa3.jpeg"}
             alt={"grace villa"}
             width={1000}
             height={1000}
@@ -103,13 +105,14 @@ export default function Home() {
       <div className="" id="things-to-do"></div>
       <ThingsToDo />
 
-
       <a href="https://wa.me/919356565665" className="fixed bottom-3 right-3">
-
-          <Image src={'/images/whatsapp.png'} width={50} height={50} alt={"whatsapp"} />
-
+        <Image
+          src={"/images/whatsapp.png"}
+          width={50}
+          height={50}
+          alt={"whatsapp"}
+        />
       </a>
-
 
       <div className="md:max-w-6xl m-auto pt-10 bg-blue-50 rounded-lg">
         <h2 className="text-center mb-5">Contact</h2>
@@ -127,9 +130,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 p-5 ">
             <h3 className="mt-5">Location</h3>
-            <p>
-              Pune
-            </p>
+            <p>Pune</p>
 
             <h3 className="mt-5">Phone Number</h3>
             <a href="tel:+919356565665">
@@ -137,21 +138,28 @@ export default function Home() {
             </a>
 
             <div className="flex my-5">
-
               <a href="https://wa.me/919356565665" className="mr-5">
-                <BsWhatsapp size={30}/>
+                <BsWhatsapp size={30} />
               </a>
               <a href="https://instagram.com/aidniinternational?igshid=YmMyMTA2M2Y=">
-                <BsInstagram size={30}/>
+                <BsInstagram size={30} />
               </a>
-
             </div>
-
           </div>
         </div>
       </div>
-
-
     </>
   );
 }
+
+const Facility = ({ icon, title, link }) => {
+  return (
+    <Link
+      className="p-2 flex rounded-lg justify-center flex-col items-center text-center md:m-5 m-2 bg-white md:w-1/5 w-2/5"
+      href={link}
+    >
+      <div className="text-[#383a4e] ">{icon}</div>
+      <h4 className="py-2">{title}</h4>
+    </Link>
+  );
+};

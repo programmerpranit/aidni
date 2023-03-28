@@ -13,6 +13,8 @@ import {
   MdWifi,
   MdOutlineStore,
 } from "react-icons/md";
+import {BiSwim} from "react-icons/bi";
+import {CiForkAndKnife} from "react-icons/ci";
 
 const GraceVilla = () => {
   return (
@@ -26,7 +28,7 @@ const GraceVilla = () => {
       <div className="md:max-w-6xl m-auto flex max-md:flex-col p-5">
         <Image
           className="md:w-1/2 md:p-5 "
-          src={"/images/top-background.jpg"}
+          src={"/images/grace-villa3.jpeg"}
           width={700}
           height={700}
           alt={"grace villa"}
@@ -90,27 +92,14 @@ const GraceVilla = () => {
         <h2 className="text-center">Facilities</h2>
 
         <div className="card rounded-lg mt-5 m-auto flex justify-center flex-wrap bg-blue-50 md:p-20">
-          <Facility
-            icon={<GiHills size={50} />}
-            title={"Valley view from each room"}
-          />
-          <Facility
-            icon={<MdOutlineBedroomChild size={50} />}
-            title={"Triple occupancy theme based family rooms"}
-          />
-          <Facility
-            icon={<MdOutlineBedroomParent size={50} />}
-            title={"Cozy Couple rooms"}
-          />
-          <Facility
-            icon={<MdFastfood size={50} />}
-            title={"Rooftop cafeteria (Pure Veg)"}
-          />
+          
           <Facility
             icon={<MdOutlineSportsCricket size={50} />}
             title={"Childrens play area"}
           />
           <Facility icon={<MdWifi size={50} />} title={"Free Wi-Fi"} />
+          <Facility icon={<BiSwim size={50} />} title={"Swimming Pool"} />
+          <Facility icon={<CiForkAndKnife size={50} />} title={"Homely Food"} />
         </div>
       </div>
 
