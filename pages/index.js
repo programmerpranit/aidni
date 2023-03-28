@@ -18,7 +18,7 @@ export default function Home() {
       <div className="h-screen flex flex-col justify-center items-center bg-cover bg-fixed bg-[url('../public/images/top-background.png')]">
         <h1 className="text-center text-white ">Welcome to Aidni</h1>
         <p className="text-center text-white px-5 max-w-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam
+        An emerging global enterprise brand with diverse businesses.
         </p>
       </div>
 
