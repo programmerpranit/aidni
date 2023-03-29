@@ -8,7 +8,8 @@ const ThingsToDo = () => {
       <div className="things-to-do text-center my-20">
         <h2>Things to do Near us</h2>
         <p className="max-w-3xl m-auto my-5 px-5">
-        Capture the beauty of the elegant waterfalls like Chinaman, Lingmala & Dhobi waterfalls, both in your camera, but more in your heart!
+          Capture the beauty of nature and be a part of the breath taking
+          experiences in Panchgani, Mahabaleshwar!
         </p>
 
         <div className="things-container max-w-5xl m-auto justify-between ">
@@ -18,19 +19,25 @@ const ThingsToDo = () => {
             image={"/things/venna-lake.jpg"}
           />
           <Thing
+            title={"Harisson's Folly Point"}
+            subtitle={"Adrenaline rush through paragliding"}
+            image={"/things/harrisons.jpg"}
+          />
+          <Thing
             title={"Tapola"}
             subtitle={"Taste The Thrill Of Jungle Trekking"}
             image={"/things/tapola.jpg"}
-
           />
           <Thing
             title={"Pratapgarh Fort"}
             subtitle={"Unveil The Secrets Of This Mysterious Spot"}
             image={"/things/Pratapgad-fort.jpg"}
           />
-          <Thing title={"Lingmala Falls"} subtitle={"Take A Dip"} 
+          <Thing
+            title={"Lingmala Falls"}
+            subtitle={"Take A Dip"}
             image={"/things/lingmala.jpg"}
-            />
+          />
           <Thing
             title={"Mahabaleshwar Temple"}
             subtitle={"Seek The Blessings Of Lord Shiva"}
@@ -47,12 +54,16 @@ const ThingsToDo = () => {
             subtitle={"Gaze At The Colourful Sunset"}
             image={"/things/wilson-point.jpg"}
           />
-          <Thing title={"Babington Point"} subtitle={"Go Birdwatching"} 
+          <Thing
+            title={"Babington Point"}
+            subtitle={"Go Birdwatching"}
             image={"/things/babington-point.jpg"}
-            />
-          <Thing title={"Connaught Peak"} subtitle={"Have A Picnic"} 
+          />
+          <Thing
+            title={"Connaught Peak"}
+            subtitle={"Have A Picnic"}
             image={"/things/connaught-peak.jpg"}
-            />
+          />
           <Thing
             title={"Rajpuri"}
             subtitle={"Wander In The Historical Caves"}
@@ -73,9 +84,11 @@ const ThingsToDo = () => {
             subtitle={"Explore The Hill Station On A Horseback"}
             image={"/things/horse-riding.jpg"}
           />
-          <Thing title={"Town Bazaar"} subtitle={"Indulge In Shopping"} 
+          <Thing
+            title={"Town Bazaar"}
+            subtitle={"Indulge In Shopping"}
             image={"/things/town-bazar.jpg"}
-            />
+          />
           <Thing
             title={"Elephant's Head Point"}
             subtitle={"Catch The Bird's Eye View"}

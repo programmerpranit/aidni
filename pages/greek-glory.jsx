@@ -24,6 +24,9 @@ const GreekGlory = () => {
       <Navbar />
       <div className="h-[60vh] flex justify-center flex-col bg-blue-50 items-center">
         <h1 className="text-center">Greek Glory</h1>
+        <p className="text-center px-5 max-w-lg">
+        Theme based hotel FIRST TIME IN INDIA!
+        </p>
         <button className="bg-blue-500 my-5 -mb-10">Theme Resort</button>
       </div>
 
@@ -39,7 +42,7 @@ const GreekGlory = () => {
         <div className="md:w-1/2 flex flex-wrap">
           <Image
             className="w-1/2 md:p-5 max-md:my-2 pr-1 md:rounded-3xl rounded-lg"
-            src={"/images/gg2.jpg"}
+            src={"/images/car-room.jpg"}
             width={700}
             height={700}
             alt={"grace villa"}
@@ -53,7 +56,7 @@ const GreekGlory = () => {
           />
           <Image
             className="w-1/2 md:p-5  max-md:pr-1 md:rounded-3xl rounded-lg"
-            src={"/images/gg3.jpg"}
+            src={"/images/top-background.jpg"}
             width={700}
             height={700}
             alt={"grace villa"}
@@ -94,19 +97,58 @@ const GreekGlory = () => {
 
       <div className="md:max-w-6xl m-auto my-10">
         <h2 className="text-center mb-10">Rooms</h2>
+        <Room
+          name={"Supercar theme room"}
+          image={"/images/car-room.jpg"}
+          desc={
+            "we offer a thrilling Supercar Theme Room, perfect for guests who are fans of high-speed, luxury vehicles. The room is decorated with posters and murals of the world's most popular supercars, such as Lamborghinis, Ferraris. One can imagine themselves behind the wheel of a luxury supercar in this exciting room, making their stay at our resort a high-speed adventure."
+          }
+        />
 
+        <Room
+          name={"Wonder Girl room"}
+          image={"/images/wonder-girl.jpg"}
+          desc={
+            "One double bed for mommy and daddy, and a special bed near ELSA for the kiddo! You won’t want to leave this charming, one-of-a-kind place."
+          }
+        />
+{/* 
         <Room
           name={"Barbie Pink Room"}
           image={"/images/barbie-room.jpg"}
           desc={
             "Ultimate girly-girl experience, you won't want to miss the Barbie Pink room! The Barbie Pink room is a whimsical, playful, and oh-so-pink escape that is perfect for anyone who loves all things Barbie. From the moment you step inside, you'll be transported to a world of pink and glamour, surrounded by playful accents and whimsical details."
           }
+        /> */}
+
+        <Room
+          name={"Superhero theme room"}
+          image={"/images/superhero-room.jpg"}
+          desc={
+            "One double bed for mommy and daddy, and a special bed with the AVENGERS! You won’t want to leave this charming, one-of-a-kind place. AVENGERS ASSEMBLE!"
+          }
         />
+
         <Room
           name={"Rainbow theme room"}
           image={"/images/rainbow-room.jpg"}
           desc={
             "We offer a vibrant and cheerful Rainbow Themed Room, perfect for guests seeking a lively and playful ambiance. The room in a gradient of rainbow colors, creating a mesmerizing visual effect. The bed is adorned with rainbow-striped linens, adding to the playful vibe."
+          }
+        />
+
+        <Room
+          name={"Forest room"}
+          image={"/images/forest.jpg"}
+          desc={
+            "One cozy bed for the romantic couple with the window directly opening into the valley! You won’t want to leave this charming, one-of-a-kind place."
+          }
+        />
+        <Room
+          name={"Round Bed Room"}
+          image={"/images/round-bed.jpg"}
+          desc={
+            "Yes the round bed you always dreamt of! You won’t want to leave this charming, one-of-a-kind place."
           }
         />
         <Room
@@ -117,12 +159,20 @@ const GreekGlory = () => {
           }
         />
         <Room
-          name={"Super car theme room"}
-          image={"/images/car-room.jpg"}
+          name={"Ship Room"}
+          image={"/images/ship.jpg"}
           desc={
-            "we offer a thrilling Supercar Theme Room, perfect for guests who are fans of high-speed, luxury vehicles. The room is decorated with posters and murals of the world's most popular supercars, such as Lamborghinis, Ferraris. One can imagine themselves behind the wheel of a luxury supercar in this exciting room, making their stay at our resort a high-speed adventure."
+            "One double bed for Captain mommy and Captain daddy, and two ship beds for the aspiring baby captains! You won’t want to leave this charming, one-of-a-kind place. AYE AYE CAPTAIN!"
           }
         />
+        <Room
+          name={"Luxury Room"}
+          image={"/images/luxury-room.jpg"}
+          desc={
+            "One king sized bed for the Royal Couple with a BATHTUB directly opening into the valley! You won’t want to leave this charming, one-of-a-kind place."
+          }
+        />
+
       </div>
       <div className="md:max-w-6xl m-auto my-10">
         <h2 className="text-center">Facilities</h2>

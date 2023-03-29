@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex md:w-3/4 m-auto justify-between items-center">
           <div className="logo">
             <Link href={"/"}>
-              <h3>Aidni</h3>
+              <h3>AIDNI INTERNATIONAL</h3>
             </Link>
           </div>
           <div

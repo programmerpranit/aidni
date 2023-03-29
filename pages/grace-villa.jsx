@@ -4,17 +4,12 @@ import Review from "@/components/Review";
 import Image from "next/image";
 import React from "react";
 import { BsInstagram, BsWhatsapp } from "react-icons/bs";
-import { GiHills } from "react-icons/gi";
-import {
-  MdOutlineBedroomChild,
-  MdOutlineBedroomParent,
-  MdFastfood,
-  MdOutlineSportsCricket,
-  MdWifi,
-  MdOutlineStore,
-} from "react-icons/md";
-import {BiSwim} from "react-icons/bi";
-import {CiForkAndKnife} from "react-icons/ci";
+import { GiChessQueen, GiBarbecue } from "react-icons/gi";
+import { MdOutlineSportsCricket, MdWifi } from "react-icons/md";
+import { BiSwim } from "react-icons/bi";
+import { CiForkAndKnife } from "react-icons/ci";
+import {FaFortAwesome} from 'react-icons/fa';
+import {IoMdBonfire} from 'react-icons/io';
 
 const GraceVilla = () => {
   return (
@@ -22,12 +17,15 @@ const GraceVilla = () => {
       <Navbar />
       <div className="h-[60vh] flex justify-center flex-col bg-blue-50 items-center">
         <h1 className="text-center">Grace Villa</h1>
+        <p className="text-center px-5 max-w-lg">
+          5 BHK villa spread in 16000 sq ft with Pool!
+        </p>
         <button className="bg-blue-500 my-5 -mb-10">Luxury Villa</button>
       </div>
 
       <div className="md:max-w-6xl m-auto flex max-md:flex-col p-5">
         <Image
-          className="md:w-1/2 md:p-5 "
+          className=" md:w-1/2 object-cover md:p-5 "
           src={"/images/grace-villa3.jpeg"}
           width={700}
           height={700}
@@ -43,22 +41,22 @@ const GraceVilla = () => {
             alt={"grace villa"}
           />
           <Image
-            className="w-1/2 md:p-5  max-md:my-2 pl-1"
-            src={"/images/grace-villa3.jpeg"}
-            width={700}
-            height={700}
-            alt={"grace villa"}
-          />
-          <Image
-            className="w-1/2 md:p-5  max-md:pr-1"
+            className="w-1/2 md:p-5 object-contain  max-md:pl-1"
             src={"/images/grace-villa4.jpeg"}
             width={700}
             height={700}
             alt={"grace villa"}
           />
           <Image
-            className="w-1/2 md:p-5  max-md:pl-1"
-            src={"/images/grace-villa5.jpeg"}
+            className="w-1/2 md:p-5 object-contain max-md:pr-1"
+            src={"/images/grace-villa.jpeg"}
+            width={700}
+            height={700}
+            alt={"grace villa"}
+          />
+          <Image
+            className="w-1/2 md:p-5 object-contain max-md:my-2 pl-1"
+            src={"/images/grace-villa1.jpeg"}
             width={700}
             height={700}
             alt={"grace villa"}
@@ -68,15 +66,18 @@ const GraceVilla = () => {
 
       <div className="">
         <p className="md:max-w-6xl m-auto p-5 mt-10 text-center">
-          Nestled in the foothills of Sahyadri, between the enchanting
-          Panchgani-Mahabaleshwar twin hill stations, Greace Villa is one of its
-          kind luxury villas for dream vacations and business too! a complete
-          standout luxury villa cum holiday home for you, your family, and
-          friends to enjoy a memorable dream vacation that will always remain
-          close to your heart! Mahabaleshwar, a popular hill station in
-          Maharashtra, is home to our luxurious resort villa. Our villa offers
-          guests a serene and peaceful escape from the hustle and bustle of
-          everyday life.{" "}
+          Nestled in the foothills of Sahyadris, between the enchanting
+          Panchgani - Mahabaleshwar twin hill stations, Grace Villa is one of
+          its kind luxury villas for dream vacations! A complete standout luxury
+          property for your family and friends to enjoy a memorable dream
+          vacation! The villa is surrounded by lush greenery and its large
+          windows bring in fresh cool air to rejuvenate you. The interior is
+          tastefully decorated, with elegant furnishings and modern amenities.
+          Guests can lounge in the spacious living room, or relax in the
+          comfortable bedrooms. Our resort villa in Panchgani, Mahabaleshwar is
+          the perfect retreat for those seeking a peaceful, nature-filled
+          getaway, offering guests a serene and peaceful escape from the hustle
+          and bustle of everyday life.
         </p>
         <p className="md:max-w-6xl m-auto p-5 text-center">
           The villa is surrounded by lush greenery, and its large windows offer
@@ -92,14 +93,17 @@ const GraceVilla = () => {
         <h2 className="text-center">Facilities</h2>
 
         <div className="card rounded-lg mt-5 m-auto flex justify-center flex-wrap bg-blue-50 md:p-20">
-          
+          <Facility icon={<BiSwim size={50} />} title={"Swimming Pool"} />
+          <Facility icon={<FaFortAwesome size={50} />}  title={"Kids Sandpit"} />
+          <Facility icon={<GiBarbecue size={50} />}  title={"BBQ"} />
+          <Facility icon={<IoMdBonfire size={50} />}  title={"Bonfire"} />
+          <Facility icon={<MdWifi size={50} />}  title={"Free Wi-Fi"} />
           <Facility
             icon={<MdOutlineSportsCricket size={50} />}
-            title={"Childrens play area"}
+            title={"Outdoor games"}
           />
-          <Facility icon={<MdWifi size={50} />} title={"Free Wi-Fi"} />
-          <Facility icon={<BiSwim size={50} />} title={"Swimming Pool"} />
-          <Facility icon={<CiForkAndKnife size={50} />} title={"Homely Food"} />
+          <Facility icon={<GiChessQueen size={50} />} title={"Indoor Games"} />
+          <Facility icon={<CiForkAndKnife size={50} />} title={"Home Cooked Food"} />
         </div>
       </div>
 
@@ -108,33 +112,31 @@ const GraceVilla = () => {
 
         <div className="card rounded-lg mt-5 m-auto flex justify-center flex-wrap md:p-10 p-5">
           <Review
-            owner={"Fatima Kazi"}
+            owner={"Chetan Bhansali"}
             review={
-              "Great location, really pleasant and clean rooms.. Each and every room has its own unique theme which is eye appealing.. Greek Glory would be a perfect stay for kids too as they have activities and an outdoor play area for kids. The thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous. We had a good time at Greek Glory Highly recommended"
+              "Really nice property. Had super fun during the stay with family and friends. The best part is the sandpit for kids. The dinning area is also nice. Enjoyed the bonfire every night. Overall super experience. \n The staff is really co-operative. I have forget my watch at the property, for which I have received the call within a hour and later on received my watch through courier. Really pleased with the honesty and follow service."
             }
           />
           <Review
-            owner={"Shivam Raj"}
+            owner={"Umesha"}
             review={
-              "Awesome place to stay with all the amenities you need & definitely not to miss out the food .. quality & taste is awesome. I stayed for 4 days with family and guys this resort has everything your need for yourself to relax. They have amazing play area / view'/ cafe/ spacious rooms , you will just love it. Staff were very welcoming . In totality you will love this place in every way."
+              " We've just got back from staying in the AIDNI Grace Villa which was a lovely home. Best place for family /friends.Such nice decor and plenty of space.The pool is ok in size and a big hit with the kids! It's rare to stay somewhere which is clean and actually clean.. this place is just that- CLEAN - no dirt or dust anywhere! Caretakers behavior is nice & very supportive. We enjoyed alot. Would like to visit again."
             }
           />
           <Review
-            owner={"Yashraj Sisode"}
+            owner={"Aditya Diwan"}
             review={
-              "Our stay at Greek Glory Belong Mahabaleshwar Was magical beyond all expectations. The ambiences were impeccable and simply beautiful. The Staff were friendly and amazing accommodating. The food! Oh my god, the food was totally delicious. We could not have wanted for single thing. If we come back to Mahabaleshwar we would not consider staying anywhere other than here. Absolutely perfect! Thank You so much Team"
+              "A fantastic place! Worked from there for more than a week and the experience was superb. It is a perfect blend of a quiet getaway or hosting friends and family for those weekend gala times, worked well for both over the course of my stay! The host is extremely cordial and ready to help you out at the beck of a call. Highly recommend!"
             }
           />
           <Review
-            owner={"Shriranga Bhat"}
+            owner={"Shruti Sivanandam"}
             review={
-              "Nice, Small .. Themes based hotel bang on the highway! Staff is super friendly and Manager Omkar is quick with his response and arrangement. Rooms are clean and theme based. Food options are few, however they arrange all your food / deit requests. The view of Sahyadri mountain is wonderful from the restaurant and few rooms"
+              "I recently read a quote that went 'people can definitely fall in love with a place at first sight'. As someone who loves to visit new places and enjoy quality time with loved ones, Grace Villa does justice to its name. If you need a home away from home but still want to feel like it's a vacation, this is the place to go. It has everything you would ever need to just chill with your loved ones. The host is lovely and gracious. I can assure you that the memories you make here will linger for a long time even after you've left."
             }
           />
         </div>
       </div>
-
-
 
       <div className="md:max-w-6xl m-auto pt-10 bg-blue-50 rounded-lg">
         <h2 className="text-center mb-5">Contact</h2>
